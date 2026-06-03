@@ -1,0 +1,16 @@
+{
+  "name": "focuspal",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace apps/desktop run dev",
+    "tauri": "npm --workspace apps/desktop run tauri",
+    "build": "npm --workspace apps/desktop run build",
+    "test": "npm --workspace apps/desktop run test",
+    "lint": "npm --workspace apps/desktop run lint",
+    "demo:reset": "node scripts/reset-demo-data.mjs"
+  }
+}
